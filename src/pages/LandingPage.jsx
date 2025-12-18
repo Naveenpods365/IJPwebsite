@@ -290,7 +290,7 @@ export default function LandingPage() {
                 <Container>
                     <div className="flex items-center justify-between py-8">
                         <div className="flex items-center gap-3">
-                            <div className=" mt-[2rem] grid h-28 w-28 place-items-center  rounded-full bg-white shadow-soft ring-1 ring-slate-200 absolute z-10">
+                            <div className=" mt-[2.6rem] grid h-28 w-28 place-items-center  rounded-full bg-white  absolute z-10">
                                 <img
                                     src={logoUrl}
                                     alt="JustPaid"
@@ -299,7 +299,7 @@ export default function LandingPage() {
                             </div>
                         </div>
 
-                        <nav className="hidden items-center gap-7 lg:flex">
+                        <nav className="hidden items-center gap-7 lg:flex ml-[3rem]">
                             <NavLink href="#" active>
                                 Home
                             </NavLink>
