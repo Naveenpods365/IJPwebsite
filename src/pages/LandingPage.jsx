@@ -299,7 +299,7 @@ export default function LandingPage() {
                             </div>
                         </div>
 
-                        <nav className="hidden items-center gap-7 lg:flex ml-[3rem]">
+                        <nav className="hidden items-center gap-7 lg:flex ml-[5rem]">
                             <NavLink href="#" active>
                                 Home
                             </NavLink>
