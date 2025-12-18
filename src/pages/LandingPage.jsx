@@ -20,7 +20,7 @@ import author1Png from "../assets/author1.png";
 import author2Png from "../assets/author2.png";
 import likeSvg from "../assets/like.svg";
 import dislikeSvg from "../assets/dislike.svg";
-import symbol from "../assets/symbol.svg";
+import symbol from "../assets/Symbol.svg";
 import msgSvg from "../assets/msg.svg";
 import shareIconSvg from "../assets/shareicon.svg";
 import leftInsPng from "../assets/leftins.png";
@@ -392,9 +392,7 @@ export default function LandingPage() {
                                         alt="Intro video"
                                         className="aspect-video w-full object-cover"
                                     />
-                                    <div className="pointer-events-none absolute inset-0 grid place-items-center">
-                                      
-                                    </div>
+                                    <div className="pointer-events-none absolute inset-0 grid place-items-center"></div>
                                 </div>
                             </div>
                         </div>
@@ -1444,7 +1442,10 @@ export default function LandingPage() {
                                         className="inline-flex h-9 items-center gap-2 rounded-md border border-slate-200 bg-white px-3 text-xs font-semibold text-slate-700"
                                     >
                                         <img
-                                        src={symbol}/>
+                                            src={symbol}
+                                            alt=""
+                                            className="h-4 w-4"
+                                        />
                                         Download for Android
                                     </button>
                                 </div>
