@@ -29,6 +29,7 @@ import googlePlayPng from "../assets/googleplay.png";
 import iosPng from "../assets/ios.png";
 import glowPng from "../assets/glow.png";
 import ctaPng from "../assets/CTA.png";
+import Header from "../components/Header";
 import { useEffect, useState } from "react";
 
 function Container({ children, className = "" }) {
@@ -38,22 +39,6 @@ function Container({ children, className = "" }) {
         >
             {children}
         </div>
-    );
-}
-
-function NavLink({ href = "#", active = false, children }) {
-    return (
-        <a
-            href={href}
-            className={`relative px-1 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900 ${
-                active ? "text-brand-dark" : ""
-            }`}
-        >
-            {children}
-            {active ? (
-                <span className="absolute -bottom-1 left-1/2 h-[2px] w-8 -translate-x-1/2 rounded-full bg-brand" />
-            ) : null}
-        </a>
     );
 }
 
@@ -286,40 +271,7 @@ export default function LandingPage() {
 
     return (
         <div className="bg-white">
-            <header className="border-b border-slate-200 bg-white ">
-                <Container>
-                    <div className="flex items-center justify-between py-8">
-                        <div className="flex items-center gap-3">
-                            <div className=" mt-[2.6rem] grid h-28 w-28 place-items-center  rounded-full bg-white  absolute z-10">
-                                <img
-                                    src={logoUrl}
-                                    alt="JustPaid"
-                                    className="h-13 w-13 object-contain "
-                                />
-                            </div>
-                        </div>
-
-                        <nav className="hidden items-center gap-7 lg:flex ml-[5rem]">
-                            <NavLink href="#" active>
-                                Home
-                            </NavLink>
-                            <NavLink href="#">Contests</NavLink>
-                            <NavLink href="#">About Us</NavLink>
-                            <NavLink href="#">Best Deals</NavLink>
-                            <NavLink href="#">Blogs</NavLink>
-                            <NavLink href="#">Features</NavLink>
-                            <NavLink href="#">Contact Us</NavLink>
-                        </nav>
-
-                        <a
-                            href="#"
-                            className="rounded-full bg-brand px-5 py-2 text-sm font-medium text-white shadow-soft transition hover:bg-brand-dark"
-                        >
-                            Download Now
-                        </a>
-                    </div>
-                </Container>
-            </header>
+            <Header logoUrl={logoUrl} />
 
             <main>
                 <section

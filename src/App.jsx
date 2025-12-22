@@ -1,5 +1,7 @@
 import { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
+import AboutPage from "./pages/AboutPage";
 import logoPng from "./assets/iJustPaid Logo 11 1.png";
 
 export default function App() {
@@ -15,5 +17,10 @@ export default function App() {
         link.href = href;
     }, []);
 
-    return <LandingPage />;
+    return (
+        <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/about" element={<AboutPage />} />
+        </Routes>
+    );
 }
