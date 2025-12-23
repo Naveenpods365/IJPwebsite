@@ -6,6 +6,10 @@ import missionSvg from "../assets/mission.svg";
 import glowPng from "../assets/glow.png";
 import tickSvg from "../assets/tick.svg";
 import Header from "../components/Header";
+import HappyUsersSection from "../components/HappyUsersSection";
+import TeamTestimonialsSection from "../components/TeamTestimonialsSection";
+import FaqSection from "../components/FaqSection";
+import FooterSection from "../components/FooterSection";
 
 function Container({ children, className = "" }) {
     return (
@@ -27,7 +31,7 @@ export default function AboutPage() {
     const tickUrl = tickSvg;
 
     return (
-        <div className="bg-white">
+        <div className="bg-white overflow-hidden">
             <Header />
 
             <main>
@@ -260,6 +264,11 @@ export default function AboutPage() {
                         </Container>
                     </div>
                 </section>
+
+                <HappyUsersSection />
+                <TeamTestimonialsSection />
+                <FaqSection />
+                <FooterSection />
             </main>
         </div>
     );

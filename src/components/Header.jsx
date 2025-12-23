@@ -58,24 +58,24 @@ export default function Header({ logoUrl = logoPng }) {
                             Contests
                         </a>
                         <HeaderLink to="/about">About Us</HeaderLink>
-                        <a
-                            href="#"
+                        <NavLink
+                            to="/#best-deals"
                             className="relative px-1 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900"
                         >
                             Best Deals
-                        </a>
+                        </NavLink>
                         <a
                             href="#"
                             className="relative px-1 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900"
                         >
                             Blogs
                         </a>
-                        <a
-                            href="#"
+                        <NavLink
+                            to="/#features"
                             className="relative px-1 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900"
                         >
                             Features
-                        </a>
+                        </NavLink>
                         <a
                             href="#"
                             className="relative px-1 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900"
