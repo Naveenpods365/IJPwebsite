@@ -29,7 +29,7 @@ import iosPng from "../assets/ios.png";
 import glowPng from "../assets/glow.png";
 import ctaPng from "../assets/CTA.png";
 import Header from "../components/Header";
-import FaqSection from "../components/FaqSection";
+import FAQSection from "../components/FAQSection";
 import FooterSection from "../components/FooterSection";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -431,7 +431,7 @@ export default function LandingPage() {
                     </div>
                 </section>
 
-                <FaqSection />
+                <FAQSection />
 
                 <section className="bg-white pb-20 sm:pb-24 w-full mt-[1rem]">
                     <div className="w-full px-4 sm:px-6 lg:px-16">

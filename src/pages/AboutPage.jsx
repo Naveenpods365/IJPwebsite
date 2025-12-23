@@ -8,7 +8,7 @@ import tickSvg from "../assets/tick.svg";
 import Header from "../components/Header";
 import HappyUsersSection from "../components/HappyUsersSection";
 import TeamTestimonialsSection from "../components/TeamTestimonialsSection";
-import FaqSection from "../components/FaqSection";
+import FAQSection from "../components/FAQSection";
 import FooterSection from "../components/FooterSection";
 
 function Container({ children, className = "" }) {
@@ -267,7 +267,7 @@ export default function AboutPage() {
 
                 <HappyUsersSection />
                 <TeamTestimonialsSection />
-                <FaqSection />
+                <FAQSection />
                 <FooterSection />
             </main>
         </div>
